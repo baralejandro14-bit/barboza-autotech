@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Barboza AutoTech · Especialistas en BMW en El Paso, TX</title>
-<meta name="description" content="Taller independiente dedicado a BMW en El Paso, Texas. Agenda tu cita en línea, cotiza partes y escríbenos por WhatsApp o Facebook. Español e inglés.">
+<meta name="description" content="Taller independiente dedicado a BMW en El Paso, Texas. Agenda tu cita en línea, cotiza partes y escríbenos por Messenger. Español e inglés.">
 <meta name="theme-color" content="#06090E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Barboza AutoTech · Especialistas en BMW en El Paso">
@@ -289,7 +289,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div><h3 data-en="BMW only">Solo BMW</h3><p data-en="We work on these engines every day: N20, N52, N54, N55, B48, B58.">Trabajamos estos motores todos los días: N20, N52, N54, N55, B48, B58.</p></div>
       <div><h3 data-en="Written quote">Cotización por escrito</h3><p data-en="You know the total before we start. No surprises at pickup.">Sabes el total antes de empezar. Sin sorpresas al recoger.</p></div>
       <div><h3 data-en="Parts in one place">Partes aquí mismo</h3><p data-en="Order the part and book the install in the same visit.">Pides la parte y agendas la instalación en la misma visita.</p></div>
-      <div><h3 data-en="Fast answers">Respuesta rápida</h3><p data-en="WhatsApp and Messenger, in Spanish or English.">WhatsApp y Messenger, en español o inglés.</p></div>
+      <div><h3 data-en="Fast answers">Respuesta rápida</h3><p data-en="On Messenger, in Spanish or English.">Por Messenger, en español o inglés.</p></div>
     </div>
   </div>
 </section>
@@ -316,7 +316,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <h3 data-en="How it works">Cómo funciona</h3>
         <ol class="steps">
           <li data-en="Pick the service, day and time.">Elige servicio, día y hora.</li>
-          <li data-en="Send the request by WhatsApp or Messenger with one tap.">Envía la solicitud por WhatsApp o Messenger con un toque.</li>
+          <li data-en="Send the request on Messenger with one tap.">Envía la solicitud por Messenger con un toque.</li>
           <li data-en="We confirm your slot and send the written quote.">Te confirmamos el horario y mandamos la cotización por escrito.</li>
         </ol>
       </div>
@@ -423,6 +423,7 @@ const $=id=>document.getElementById(id);
 const T=(es,en)=>lang==='es'?es:en;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const money=n=>'$'+n.toFixed(2);
+const ms=msg=>'https://m.me/'+CFG.facebook+'?text='+encodeURIComponent(msg);
 const wa=msg=>'https://wa.me/'+CFG.whatsapp+'?text='+encodeURIComponent(msg);
 
 function renderCats(){
@@ -466,7 +467,7 @@ function renderCart(){
    `<div class="line"><span>${esc(T(p[0],p[1]))}</span><span></span>
     <span class="qty"><button type="button" data-dec="${i}" aria-label="${T('Quitar uno','Remove one')}">−</button><span class="num">${n}</span><button type="button" data-inc="${i}" aria-label="${T('Agregar uno','Add one')}">+</button></span></div>`).join('')
    :`<p class="empty">${T('Tu carrito está vacío. Agrega una parte para empezar.','Your cart is empty. Add a part to start.')}</p>`;
-  $('cartActs').innerHTML=it.length?`<a class="btn go" target="_blank" rel="noopener" href="${wa(orderMsg())}">${T('Pedir cotización por WhatsApp','Request quote on WhatsApp')}</a><button class="btn sm" type="button" id="copyOrder">${T('Copiar lista','Copy list')}</button>`:'';
+  $('cartActs').innerHTML=it.length?`<a class="btn go" target="_blank" rel="noopener" href="${ms(orderMsg())}" data-copy="order">${T('Pedir cotización por Messenger','Request quote on Messenger')}</a>${CFG.whatsapp?`<a class="btn" target="_blank" rel="noopener" href="${wa(orderMsg())}">WhatsApp</a>`:''}<button class="btn sm" type="button" id="copyOrder">${T('Copiar lista','Copy list')}</button>`:'';
   $('cartMsg').hidden=true;
 }
 function copy(text,el,pre){
@@ -483,6 +484,7 @@ function applyLang(){
 }
 
 document.addEventListener('click',e=>{
+  const c=e.target.closest('[data-copy]'); if(c){ try{ navigator.clipboard.writeText(c.dataset.copy==='book'?$('bookText').textContent:orderMsg()).catch(()=>{}) }catch(err){} }
   const t=e.target.closest('[data-cat],[data-book],[data-slot],[data-add],[data-inc],[data-dec],#copyOrder,#copyBook');
   if(!t) return;
   if(t.dataset.cat){cat=t.dataset.cat;renderCats();renderBoard()}
@@ -512,10 +514,10 @@ $('bookForm').addEventListener('submit',e=>{
     `${T('Carro','Car')}: ${car}`, `${T('Fecha','Date')}: ${d} · ${slot}`, `${T('Nombre','Name')}: ${n}`, `${T('Teléfono','Phone')}: ${ph}`]
     .concat(note?[`${T('Notas','Notes')}: ${note}`]:[]).join('\n');
   $('bookPanel').innerHTML=`<h3>${T('Tu solicitud está lista','Your request is ready')}</h3>
-    <p>${T('Envíala para apartar el horario. La cita queda confirmada cuando te respondemos.','Send it to hold the slot. The appointment is confirmed once we reply.')}</p>
+    <p>${T('Envíala por Messenger para apartar el horario. Si el mensaje no aparece ya escrito, pégalo: se copia solo al dar clic. La cita queda confirmada cuando te respondemos.','Send it on Messenger to hold the slot. If the message is not already typed, paste it: it is copied when you click. The appointment is confirmed once we reply.')}</p>
     <pre id="bookText">${esc(msg)}</pre>
-    <div class="acts"><a class="btn go" target="_blank" rel="noopener" href="${wa(msg)}">${T('Enviar por WhatsApp','Send on WhatsApp')}</a>
-    ${CFG.facebook?`<a class="btn" target="_blank" rel="noopener" href="https://m.me/${CFG.facebook}">Messenger</a>`:''}
+    <div class="acts"><a class="btn go" target="_blank" rel="noopener" href="${ms(msg)}" data-copy="book">${T('Enviar por Messenger','Send on Messenger')}</a>
+    ${CFG.whatsapp?`<a class="btn" target="_blank" rel="noopener" href="${wa(msg)}">WhatsApp</a>`:''}
     <button class="btn sm" type="button" id="copyBook">${T('Copiar','Copy')}</button></div><p class="okline" id="bookCopied" hidden></p>`;
 });
 
