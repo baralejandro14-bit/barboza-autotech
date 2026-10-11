@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barboza AutoTech · Especialistas en BMW en El Paso, TX</title>
+<meta name="description" content="Taller independiente dedicado a BMW en El Paso, Texas. Agenda tu cita en línea, cotiza partes y escríbenos por WhatsApp o Facebook. Español e inglés.">
+<meta name="theme-color" content="#06090E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barboza AutoTech · Especialistas en BMW en El Paso">
+<meta property="og:description" content="Agenda tu cita, cotiza partes y mira cómo trabajamos tu BMW.">
+<meta property="og:url" content="https://baralejandro14-bit.github.io/barboza-autotech/">
+<meta property="og:image" content="https://baralejandro14-bit.github.io/barboza-autotech/assets/m4-gt3.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;0,700;1,700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>html{scroll-behavior:smooth;scroll-padding-top:70px}body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: un solo look oscuro tipo tablero digital. Portada con escena de escaneo holográfico sobre piso en perspectiva; paneles con borde luminoso azul. */
+:root{
+  --bg:#06090E; --surface:#0D141D; --sunk:#0A1017; --ink:#EAF1F8; --muted:#8FA1B5; --line:#1E2C3D;
+  --accent:#3D8BFF; --accent-ink:#04101F; --signal:#FFC421; --signal-ink:#1A1400; --ok:#4FD1A1;
+  --display:"Chakra Petch","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;line-height:1}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-style:italic;font-weight:700;text-transform:uppercase;letter-spacing:.01em}
+h3{font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lead{color:var(--muted);max-width:60ch}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+.draft{background:var(--signal);color:var(--signal-ink);font-size:.85rem;font-weight:600;padding-block:8px;text-align:center}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(6,9,14,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-style:italic;font-weight:700;font-size:1.25rem;text-transform:uppercase;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand::before{content:"";width:26px;height:18px;transform:skewX(-18deg);background:linear-gradient(90deg,#6EC1F0 0 33.3%,#16357F 33.3% 66.6%,#E22718 66.6%)}
+.brand b{color:var(--accent);font-weight:800}
+nav{display:flex;gap:18px;margin-left:auto;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.tools{display:flex;gap:8px;align-items:center}
+
+.btn{font:600 1rem var(--body);border:2px solid var(--ink);background:transparent;color:var(--ink);padding:10px 18px;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;justify-content:center}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn.go{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.go:hover{filter:brightness(1.1);background:var(--accent);color:var(--accent-ink)}
+.btn.blue{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.blue:hover{filter:brightness(1.1);background:var(--accent);color:var(--accent-ink)}
+.btn.sm{padding:6px 12px;font-size:.875rem}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+.head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+
+/* hero */
+.hero{padding-block:56px;--bg:#0A0D12;--ink:#F2F5F8;--muted:#A9B6C6;--line:#2A3442;--accent:#3D8BFF;--accent-ink:#04101F;background:#0A0D12;color:#F2F5F8;border-bottom:0}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.6rem);font-style:italic;font-weight:700;text-transform:uppercase;line-height:.95}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .copy{display:flex;flex-direction:column;gap:20px;min-width:0}
+.rule{width:150px;height:8px;transform:skewX(-18deg);background:linear-gradient(90deg,#6EC1F0 0 33.3%,#16357F 33.3% 66.6%,#E22718 66.6%)}
+.stage{position:relative;overflow:hidden;min-width:0;width:100%;max-width:720px;justify-self:center;border:1px solid #24405E;background:#060D17;box-shadow:0 0 40px rgba(61,139,255,.16)}
+.m8{position:relative;display:block;width:100%}
+.m8 .cad{fill:#0C1C2E;stroke:#8FD6FF;stroke-width:1.2;stroke-linejoin:round}
+.m8 [data-a]{transform-box:fill-box;transform-origin:center}
+.m8 .eng{transform:translate(226px,140px) scale(.2)}
+.m8 .spin{transform-box:fill-box;transform-origin:center}
+.m8 .step,.m8 [data-z],.m8 .real,.m8 .beam,.m8 .scanline,.m8 .wirewrap{opacity:0}
+.m8 .scanclip{transform-box:fill-box;transform-origin:center top}.m8 .wipe{transform-box:fill-box;transform-origin:left center}
+.m8 .photo{transform-origin:200px 131px}
+.viewport{position:relative}.vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none}.vtag{position:absolute;left:0;right:0;top:0;padding:12px 14px 30px;text-align:center;background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,0));opacity:0;pointer-events:none}.vtag b{display:block;font:italic 700 clamp(.82rem,2.5vw,1.35rem) var(--display);color:#FFFFFF;text-transform:uppercase;letter-spacing:.04em}.vtag span{font:500 clamp(.5rem,1.3vw,.7rem) var(--mono);letter-spacing:.14em;color:#8FD6FF;text-transform:uppercase}
+.m8 .drift,.m8 .puff{transform-box:fill-box;transform-origin:center}.m8 .puff{opacity:0}.m8 .skid path{stroke-dasharray:1;stroke-dashoffset:1}
+.m8 .hud{font:500 10px var(--mono);letter-spacing:.08em}
+.m8 .tag{font:italic 700 16px var(--display);letter-spacing:.04em}
+.phases{padding:9px 12px;background:#050A12;border-top:1px solid #24405E}.ptrack{height:2px;background:rgba(255,255,255,.14);overflow:hidden;margin-bottom:7px}.ptrack i{display:block;height:100%;background:linear-gradient(90deg,#6EC1F0,#3D8BFF 65%,#4FD1A1);transform-origin:left}.plabels{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font:500 .62rem var(--mono);letter-spacing:.07em;text-transform:uppercase;color:#7890A7;text-align:center}
+.series{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:22px}
+.series span{font:700 .9rem var(--display);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);padding:4px 12px;color:var(--ink)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:24px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+.facts b{display:block;font-family:var(--display);font-size:1.3rem;color:var(--ink);font-weight:700;line-height:1.1}
+
+.ticket{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.ticket .row{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:.875rem;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.ticket .row span:first-child{min-width:0}
+.ticket .row.total{border:0;font-weight:500;font-size:1.05rem;color:var(--ink);padding:0}
+.ticket small{color:var(--muted);font-size:.8rem}
+
+/* servicios */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.chip{font:600 .875rem var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.board{background:var(--surface);border:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.svc:last-child{border-bottom:0}
+.svc .name{font-weight:600;min-width:0}
+.svc .cat{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.svc .hrs{color:var(--muted);font-size:.8rem;text-align:right}
+.svc .price{font-size:1.05rem;text-align:right;font-weight:500}
+.note{font-size:.85rem;color:var(--muted);margin-top:14px}
+
+/* por qué */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.why div{display:flex;flex-direction:column;gap:8px;border-top:4px solid var(--ink);padding-top:14px;min-width:0}
+.why p{color:var(--muted);font-size:.95rem}
+
+/* agenda */
+.book{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:start}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;min-width:0}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+label,.lbl{font-size:.8rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+input,select,textarea{font:400 1rem var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:10px 12px;width:100%;min-width:0}
+textarea{resize:vertical;min-height:72px}
+.slots{display:flex;gap:8px;flex-wrap:wrap}
+.slot{font:500 .9rem var(--mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 12px;border-radius:4px;cursor:pointer}
+.slot[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.err{color:#FF7A6E;font-size:.9rem;font-weight:600}
+.panel{background:var(--surface);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel pre{font:400 .85rem/1.5 var(--mono);white-space:pre-wrap;word-break:break-word;margin:0;background:var(--sunk);padding:14px;border-radius:4px}
+.panel .acts{display:flex;gap:10px;flex-wrap:wrap}
+.okline{color:var(--ok);font-weight:600}
+.steps{margin:0;padding-left:20px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+
+/* tienda */
+.store{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
+.filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.filters .f{flex:1 1 180px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.part{background:var(--surface);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.part .pn{font-weight:600;line-height:1.25}
+.fit{display:flex;gap:4px;flex-wrap:wrap}
+.fit span{font:400 .7rem var(--mono);background:var(--sunk);padding:2px 6px;border-radius:3px;color:var(--muted)}
+.part .foot{margin-top:auto;display:flex;justify-content:flex-end;align-items:center;gap:8px}
+.part .price{font-size:1.1rem;font-weight:500}
+.cart{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}
+.line{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 10px;border-bottom:1px dashed var(--line);padding-bottom:10px;font-size:.9rem}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:28px;height:28px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);border-radius:4px;cursor:pointer;font:600 1rem var(--mono)}
+.empty{color:var(--muted);font-size:.95rem}
+.tot{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:500}
+
+/* facebook */
+.fb .wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.fb .acts{display:flex;gap:12px;flex-wrap:wrap}
+footer{padding-block:28px;color:var(--muted);font-size:.875rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .hero .wrap,.book,.store,.fb .wrap{grid-template-columns:1fr}
+  .why{grid-template-columns:1fr 1fr}
+  .cart{position:static}
+  nav{order:3;width:100%;margin-left:0;gap:14px}
+  .tools{margin-left:auto}
+}
+@media (max-width:560px){
+  form{grid-template-columns:1fr}
+  .why{grid-template-columns:1fr}
+  section{padding-block:40px}
+}
+.board,.panel,.part{box-shadow:0 0 0 1px rgba(61,139,255,.10),0 0 28px rgba(61,139,255,.07)}
+.part:hover,.svc:hover{border-color:var(--accent)}
+.btn.go,.btn.blue{box-shadow:0 0 18px rgba(61,139,255,.45)}
+.eyebrow::before{content:"";display:inline-block;width:18px;height:2px;margin-right:8px;vertical-align:middle;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.why div{border-top-color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="draft" id="draft"><div class="wrap" data-en="Draft: the hours and the parts list are examples until you send me yours.">Borrador: el horario y la lista de partes son ejemplos hasta que me pases los tuyos.</div></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Barboza <b>AutoTech</b></a>
+    <nav aria-label="Principal">
+      <a href="#servicios" data-en="Services">Servicios</a>
+      <a href="#agendar" data-en="Book">Agendar</a>
+      <a href="#partes" data-en="Parts">Partes</a>
+      <a href="#facebook">Facebook</a>
+    </nav>
+    <div class="tools">
+      <button class="btn sm" id="langBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      <a class="btn sm blue" href="#carrito"><span data-en="Cart">Carrito</span> <span class="num" id="cartCount">0</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow" data-en="BMW specialists · El Paso, Texas">Especialistas en BMW · El Paso, Texas</p>
+      <h1><span data-en="Your BMW,">Tu BMW,</span><br><em data-en="done right.">bien hecho.</em></h1>
+      <div class="rule"></div>
+      <p class="lead" data-en="Independent shop dedicated to BMW. We quote you in writing before we touch the car. Book online, order your parts, and message us on Facebook.">Taller independiente dedicado a BMW. Te cotizamos por escrito antes de tocar el carro. Agenda en línea, pide tus partes y escríbenos por Facebook.</p>
+      <div class="cta">
+        <a class="btn go" href="#agendar" data-en="Book an appointment">Agendar cita</a>
+        <a class="btn" href="#partes" data-en="Buy parts">Comprar partes</a>
+      </div>
+      <div class="facts">
+        <div><b>E · F · G</b><span data-en="Every chassis generation">Todas las generaciones</span></div>
+        <div><b data-en="ES · EN">ES · EN</b><span data-en="We serve you in both">Te atendemos en los dos</span></div>
+        <div><b data-en="By appointment">Con cita</b><span data-en="No waiting in line">Sin hacer fila</span></div>
+      </div>
+    </div>
+    <div class="stage"><div class="viewport"><svg class="m8" viewBox="-60 0 520 262" role="img" aria-label="El motor de 6 en línea se arma pieza por pieza, después el BMW M4 GT3 completo, y al final se ve el carro real en la pista">
+      <defs>
+        <pattern id="gMin" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10,0 H0 V10" fill="none" stroke="#12263C" stroke-width=".6"/></pattern>
+        <pattern id="gMaj" width="50" height="50" patternUnits="userSpaceOnUse"><rect width="50" height="50" fill="url(#gMin)"/><path d="M50,0 H0 V50" fill="none" stroke="#1D3B5C" stroke-width="1"/></pattern>
+        <linearGradient id="gAlu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4E8EC"/><stop offset=".5" stop-color="#A3AAB3"/><stop offset="1" stop-color="#5E656E"/></linearGradient><linearGradient id="gSteel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B9C0C8"/><stop offset=".5" stop-color="#6E757E"/><stop offset="1" stop-color="#33383F"/></linearGradient><linearGradient id="gPist" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2F4F6"/><stop offset=".5" stop-color="#C2C8CF"/><stop offset="1" stop-color="#7D848D"/></linearGradient><linearGradient id="gDark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A5059"/><stop offset=".5" stop-color="#22262C"/><stop offset="1" stop-color="#0E1014"/></linearGradient>
+        <linearGradient id="gTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000000" stop-opacity=".85"/><stop offset="1" stop-color="#000000" stop-opacity="0"/></linearGradient>
+        <filter id="fGlow" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="fSoft1" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="1.6"/></filter><filter id="fSmoke" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="fSoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+        <image id="ph" href="assets/m4-gt3.jpg" x="-60" y="0" width="520" height="262" preserveAspectRatio="none"/>
+        <clipPath id="cp_wing"><path d="M90,64 L129,57 L133,63 L152,67 L150,74 L140,82 L128,83 L95,97 L91,95 Z M262,58 L298,54 L303,56 L304,83 L298,83 L290,75 L272,64 Z"/></clipPath><clipPath id="cp_cabin"><path d="M150,67 L210,60 L262,58 L286,70 L312,102 L320,113 L300,113 L200,115 L128,119 L124,108 L138,84 Z"/></clipPath><clipPath id="cp_mirrors"><path d="M95,108 L126,106 L129,118 L124,126 L104,127 L95,121 Z M311,97 L342,94 L344,109 L340,114 L320,114 L313,104 Z"/></clipPath><clipPath id="cp_fender"><path d="M88,131 L108,139 L131,148 L128,151 L130,164 L126,176 L113,223 L100,217 L94,205 L90,180 L87,150 Z"/></clipPath><clipPath id="cp_hood"><path d="M128,118 L200,114 L300,112 L322,112 L356,126 L357,143 L338,140 L300,147 L282,151 L240,149 L200,153 L160,151 L130,149 L108,140 L92,132 L100,126 L124,125 Z"/></clipPath><clipPath id="cp_lights"><path d="M128,150 L160,150 L191,159 L189,169 L150,171 L129,164 Z M289,155 L299,146 L338,139 L342,150 L337,159 L298,162 Z"/></clipPath><clipPath id="cp_kidneys"><path d="M198,156 L237,152 L241,165 L241,200 L236,210 L215,211 L203,200 L196,176 Z M243,153 L276,150 L284,165 L285,186 L277,204 L262,208 L244,208 L242,180 Z"/></clipPath><clipPath id="cp_bumper"><path d="M125,172 L150,170 L189,168 L191,159 L160,150 L200,152 L240,148 L282,150 L289,155 L298,162 L337,159 L342,150 L338,139 L357,142 L362,160 L366,205 L363,215 L300,219 L180,221 L123,219 L115,208 L121,182 Z"/></clipPath><clipPath id="cp_splitter"><path d="M111,221 L124,216 L180,218 L300,216 L363,212 L363,218 L300,224 L180,226 L124,225 Z"/></clipPath><clipPath id="cp_bumper2"><path clip-rule="evenodd" d="M125,172 L150,170 L189,168 L191,159 L160,150 L200,152 L240,148 L282,150 L289,155 L298,162 L337,159 L342,150 L338,139 L357,142 L362,160 L366,205 L363,215 L300,219 L180,221 L123,219 L115,208 L121,182 Z M198,156 L237,152 L241,165 L241,200 L236,210 L215,211 L203,200 L196,176 Z M243,153 L276,150 L284,165 L285,186 L277,204 L262,208 L244,208 L242,180 Z"/></clipPath><clipPath id="cp_out"><path d="M90,64 L129,57 L133,63 L150,68 L210,60 L262,58 L298,54 L303,56 L304,82 L298,82 L292,76 L312,100 L314,97 L341,95 L343,108 L340,112 L322,113 L355,126 L361,160 L365,205 L362,218 L300,224 L180,226 L124,225 L112,221 L100,216 L94,205 L90,180 L88,150 L90,131 L100,126 L97,122 L96,109 L126,107 L128,100 L138,84 L128,82 L95,96 L91,95 Z"/></clipPath>
+        <clipPath id="cScan"><rect class="scanclip" x="-60" y="0" width="520" height="262"/></clipPath><clipPath id="cWipe"><rect class="wipe" x="-60" y="0" width="520" height="262"/></clipPath>
+      </defs>
+      <rect x="-60" y="0" width="520" height="262" fill="url(#gMaj)"/>
+      <path d="M200,30 V226" stroke="#8FD6FF" stroke-width=".7" stroke-dasharray="10 3 2 3" opacity=".3"/>
+      <g class="wirewrap" clip-path="url(#cScan)"><image class="wireimg" href="assets/m4-gt3-wire.webp" x="-60" y="0" width="520" height="262" preserveAspectRatio="none"/></g>
+      <rect class="scanline" x="-60" y="-2" width="520" height="2.5" fill="#CFEFFF" filter="url(#fGlow)"/>
+      <g class="eng"><g data-a="0.030,0.080,0,0,0,0.9">
+  <path d="M-112,20 L112,20 L104,56 Q102,62 96,62 L-96,62 Q-102,62 -104,56 Z" fill="url(#gDark)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-100,30 H100 M-99,38 H99 M-98,46 H98 M-97,54 H97" stroke="#0A0D12" stroke-width="1.2"/>
+  <rect x="-124" y="-110" width="248" height="82" rx="2" fill="url(#gAlu)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+  <g transform="translate(-100,0)"><rect x="-15" y="-108" width="30" height="80" fill="#0B0E12"/></g><g transform="translate(-60,0)"><rect x="-15" y="-108" width="30" height="80" fill="#0B0E12"/></g><g transform="translate(-20,0)"><rect x="-15" y="-108" width="30" height="80" fill="#0B0E12"/></g><g transform="translate(20,0)"><rect x="-15" y="-108" width="30" height="80" fill="#0B0E12"/></g><g transform="translate(60,0)"><rect x="-15" y="-108" width="30" height="80" fill="#0B0E12"/></g><g transform="translate(100,0)"><rect x="-15" y="-108" width="30" height="80" fill="#0B0E12"/></g>
+  <path d="M-120,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/><path d="M-80,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/><path d="M-40,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/><path d="M0,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/><path d="M40,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/><path d="M80,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/><path d="M120,-104 V-36" stroke="#5E6670" stroke-width="1.6" stroke-dasharray="6 3"/>
+  <rect x="-124" y="-30" width="248" height="52" rx="3" fill="#0B0E12" stroke="#A3AAB3" stroke-width="3"/>
+  <circle cx="-110" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="-88" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="-66" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="-44" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="-22" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="0" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="22" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="44" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="66" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="88" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/><circle cx="110" cy="19" r="2.2" fill="#DDE2E8" stroke="#3A4048" stroke-width=".6"/>
+</g><g data-a="0.080,0.120,-300,0,0,1"><rect x="-142" y="-46" width="14" height="72" rx="2" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-128" y="-9" width="256" height="8" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-111" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-94" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-71" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-54" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-31" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-14" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="9" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="26" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="49" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="66" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="89" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="106" y="-24" width="5" height="30" rx="1.5" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+  <rect x="126" y="-28" width="14" height="46" rx="2" fill="url(#gDark)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M129,-28 V18 M133,-28 V18 M137,-28 V18" stroke="#565C64" stroke-width=".8"/></g><g transform="translate(-100,0)"><g data-a="0.120,0.165,0,-120,0,1"><path d="M-3,-76 L3,-76 L5,-12 L-5,-12 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-6" y="-13" width="12" height="15" rx="4" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+    <rect x="-14.5" y="-94" width="29" height="24" rx="2" fill="url(#gPist)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-14.5,-90 H14.5 M-14.5,-86.5 H14.5 M-14.5,-83 H14.5" stroke="#3A4048" stroke-width="1"/><circle cy="-76" r="3.2" fill="#3A4048" stroke="#DDE2E8" stroke-width=".6"/></g></g><g transform="translate(-60,0)"><g data-a="0.129,0.174,0,-120,0,1"><path d="M-3,-76 L3,-76 L5,-12 L-5,-12 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-6" y="-13" width="12" height="15" rx="4" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+    <rect x="-14.5" y="-94" width="29" height="24" rx="2" fill="url(#gPist)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-14.5,-90 H14.5 M-14.5,-86.5 H14.5 M-14.5,-83 H14.5" stroke="#3A4048" stroke-width="1"/><circle cy="-76" r="3.2" fill="#3A4048" stroke="#DDE2E8" stroke-width=".6"/></g></g><g transform="translate(-20,0)"><g data-a="0.138,0.183,0,-120,0,1"><path d="M-3,-76 L3,-76 L5,-12 L-5,-12 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-6" y="-13" width="12" height="15" rx="4" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+    <rect x="-14.5" y="-94" width="29" height="24" rx="2" fill="url(#gPist)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-14.5,-90 H14.5 M-14.5,-86.5 H14.5 M-14.5,-83 H14.5" stroke="#3A4048" stroke-width="1"/><circle cy="-76" r="3.2" fill="#3A4048" stroke="#DDE2E8" stroke-width=".6"/></g></g><g transform="translate(20,0)"><g data-a="0.147,0.192,0,-120,0,1"><path d="M-3,-76 L3,-76 L5,-12 L-5,-12 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-6" y="-13" width="12" height="15" rx="4" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+    <rect x="-14.5" y="-94" width="29" height="24" rx="2" fill="url(#gPist)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-14.5,-90 H14.5 M-14.5,-86.5 H14.5 M-14.5,-83 H14.5" stroke="#3A4048" stroke-width="1"/><circle cy="-76" r="3.2" fill="#3A4048" stroke="#DDE2E8" stroke-width=".6"/></g></g><g transform="translate(60,0)"><g data-a="0.156,0.201,0,-120,0,1"><path d="M-3,-76 L3,-76 L5,-12 L-5,-12 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-6" y="-13" width="12" height="15" rx="4" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+    <rect x="-14.5" y="-94" width="29" height="24" rx="2" fill="url(#gPist)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-14.5,-90 H14.5 M-14.5,-86.5 H14.5 M-14.5,-83 H14.5" stroke="#3A4048" stroke-width="1"/><circle cy="-76" r="3.2" fill="#3A4048" stroke="#DDE2E8" stroke-width=".6"/></g></g><g transform="translate(100,0)"><g data-a="0.165,0.210,0,-120,0,1"><path d="M-3,-76 L3,-76 L5,-12 L-5,-12 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><rect x="-6" y="-13" width="12" height="15" rx="4" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+    <rect x="-14.5" y="-94" width="29" height="24" rx="2" fill="url(#gPist)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-14.5,-90 H14.5 M-14.5,-86.5 H14.5 M-14.5,-83 H14.5" stroke="#3A4048" stroke-width="1"/><circle cy="-76" r="3.2" fill="#3A4048" stroke="#DDE2E8" stroke-width=".6"/></g></g><g data-a="0.190,0.240,0,-80,0,1"><rect x="-126" y="-134" width="252" height="24" rx="2" fill="url(#gAlu)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/>
+  <g transform="translate(-100,0)"><path d="M-13,-110 A13,9 0 0 1 13,-110 Z" fill="#0B0E12"/><circle cx="-7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><circle cx="7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><path d="M-6,-121 L-4,-112 M6,-121 L4,-112" stroke="#DDE2E8" stroke-width="1.3"/></g><g transform="translate(-60,0)"><path d="M-13,-110 A13,9 0 0 1 13,-110 Z" fill="#0B0E12"/><circle cx="-7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><circle cx="7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><path d="M-6,-121 L-4,-112 M6,-121 L4,-112" stroke="#DDE2E8" stroke-width="1.3"/></g><g transform="translate(-20,0)"><path d="M-13,-110 A13,9 0 0 1 13,-110 Z" fill="#0B0E12"/><circle cx="-7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><circle cx="7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><path d="M-6,-121 L-4,-112 M6,-121 L4,-112" stroke="#DDE2E8" stroke-width="1.3"/></g><g transform="translate(20,0)"><path d="M-13,-110 A13,9 0 0 1 13,-110 Z" fill="#0B0E12"/><circle cx="-7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><circle cx="7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><path d="M-6,-121 L-4,-112 M6,-121 L4,-112" stroke="#DDE2E8" stroke-width="1.3"/></g><g transform="translate(60,0)"><path d="M-13,-110 A13,9 0 0 1 13,-110 Z" fill="#0B0E12"/><circle cx="-7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><circle cx="7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><path d="M-6,-121 L-4,-112 M6,-121 L4,-112" stroke="#DDE2E8" stroke-width="1.3"/></g><g transform="translate(100,0)"><path d="M-13,-110 A13,9 0 0 1 13,-110 Z" fill="#0B0E12"/><circle cx="-7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><circle cx="7" cy="-125" r="4.2" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".6"/><path d="M-6,-121 L-4,-112 M6,-121 L4,-112" stroke="#DDE2E8" stroke-width="1.3"/></g>
+  <path d="M-122,-125 H122" stroke="#DDE2E8" stroke-width=".8" opacity=".6"/></g><g data-a="0.250,0.285,0,-70,720,2"><polygon points="-116.8,-131.0 -118.4,-128.2 -121.6,-128.2 -123.2,-131.0 -121.6,-133.8 -118.4,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="-121" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.256,0.291,0,-70,720,2"><polygon points="-76.8,-131.0 -78.4,-128.2 -81.6,-128.2 -83.2,-131.0 -81.6,-133.8 -78.4,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="-81" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.262,0.297,0,-70,720,2"><polygon points="-36.8,-131.0 -38.4,-128.2 -41.6,-128.2 -43.2,-131.0 -41.6,-133.8 -38.4,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="-41" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.268,0.303,0,-70,720,2"><polygon points="3.2,-131.0 1.6,-128.2 -1.6,-128.2 -3.2,-131.0 -1.6,-133.8 1.6,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="-1" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.274,0.309,0,-70,720,2"><polygon points="43.2,-131.0 41.6,-128.2 38.4,-128.2 36.8,-131.0 38.4,-133.8 41.6,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="39" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.280,0.315,0,-70,720,2"><polygon points="83.2,-131.0 81.6,-128.2 78.4,-128.2 76.8,-131.0 78.4,-133.8 81.6,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="79" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.286,0.321,0,-70,720,2"><polygon points="123.2,-131.0 121.6,-128.2 118.4,-128.2 116.8,-131.0 118.4,-133.8 121.6,-133.8" fill="#E3E7EC" stroke="#3A4048" stroke-width=".7"/><rect x="119" y="-128" width="2" height="14" fill="#9AA3AD"/></g><g data-a="0.300,0.345,0,-65,0,1"><path d="M-124,-134 L-124,-147 Q-124,-156 -114,-156 L114,-156 Q124,-156 124,-147 L124,-134 Z" fill="url(#gDark)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><path d="M-110,-150 H110" stroke="#565C64" stroke-width="1"/>
+  <path d="M-36,-141 h14 l-3,-7 h-14 Z" fill="#81C4FF"/><path d="M-20,-141 h14 l-3,-7 h-14 Z" fill="#1E5AA8"/><path d="M-4,-141 h14 l-3,-7 h-14 Z" fill="#E7222E"/><path d="M18,-144.5 H60" stroke="#C9CED4" stroke-width="2"/></g><g transform="translate(-100,0)"><g data-a="0.350,0.385,0,-55,0,1"><rect x="-1.6" y="-146" width="3.2" height="18" fill="#9AA3AD"/><rect x="-3.6" y="-160" width="7.2" height="6" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-2.4" y="-172" width="4.8" height="12" rx="1" fill="#F4F6F8"/><path d="M-2.4,-168 H2.4 M-2.4,-165 H2.4" stroke="#B9C0C8" stroke-width=".7"/><rect x="-1.4" y="-176" width="2.8" height="4" fill="#9AA3AD"/></g></g><g transform="translate(-60,0)"><g data-a="0.357,0.392,0,-55,0,1"><rect x="-1.6" y="-146" width="3.2" height="18" fill="#9AA3AD"/><rect x="-3.6" y="-160" width="7.2" height="6" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-2.4" y="-172" width="4.8" height="12" rx="1" fill="#F4F6F8"/><path d="M-2.4,-168 H2.4 M-2.4,-165 H2.4" stroke="#B9C0C8" stroke-width=".7"/><rect x="-1.4" y="-176" width="2.8" height="4" fill="#9AA3AD"/></g></g><g transform="translate(-20,0)"><g data-a="0.364,0.399,0,-55,0,1"><rect x="-1.6" y="-146" width="3.2" height="18" fill="#9AA3AD"/><rect x="-3.6" y="-160" width="7.2" height="6" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-2.4" y="-172" width="4.8" height="12" rx="1" fill="#F4F6F8"/><path d="M-2.4,-168 H2.4 M-2.4,-165 H2.4" stroke="#B9C0C8" stroke-width=".7"/><rect x="-1.4" y="-176" width="2.8" height="4" fill="#9AA3AD"/></g></g><g transform="translate(20,0)"><g data-a="0.371,0.406,0,-55,0,1"><rect x="-1.6" y="-146" width="3.2" height="18" fill="#9AA3AD"/><rect x="-3.6" y="-160" width="7.2" height="6" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-2.4" y="-172" width="4.8" height="12" rx="1" fill="#F4F6F8"/><path d="M-2.4,-168 H2.4 M-2.4,-165 H2.4" stroke="#B9C0C8" stroke-width=".7"/><rect x="-1.4" y="-176" width="2.8" height="4" fill="#9AA3AD"/></g></g><g transform="translate(60,0)"><g data-a="0.378,0.413,0,-55,0,1"><rect x="-1.6" y="-146" width="3.2" height="18" fill="#9AA3AD"/><rect x="-3.6" y="-160" width="7.2" height="6" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-2.4" y="-172" width="4.8" height="12" rx="1" fill="#F4F6F8"/><path d="M-2.4,-168 H2.4 M-2.4,-165 H2.4" stroke="#B9C0C8" stroke-width=".7"/><rect x="-1.4" y="-176" width="2.8" height="4" fill="#9AA3AD"/></g></g><g transform="translate(100,0)"><g data-a="0.385,0.420,0,-55,0,1"><rect x="-1.6" y="-146" width="3.2" height="18" fill="#9AA3AD"/><rect x="-3.6" y="-160" width="7.2" height="6" fill="url(#gSteel)" stroke="#DDE2E8" stroke-width=".5"/><rect x="-2.4" y="-172" width="4.8" height="12" rx="1" fill="#F4F6F8"/><path d="M-2.4,-168 H2.4 M-2.4,-165 H2.4" stroke="#B9C0C8" stroke-width=".7"/><rect x="-1.4" y="-176" width="2.8" height="4" fill="#9AA3AD"/></g></g><g data-a="0.400,0.440,0,90,0,1"><path d="M-100,-106 Q-100,-80 -74,-70" fill="none" stroke="url(#gSteel)" stroke-width="5" stroke-linecap="round"/><path d="M-60,-106 Q-60,-80 -60,-70" fill="none" stroke="url(#gSteel)" stroke-width="5" stroke-linecap="round"/><path d="M-20,-106 Q-20,-80 -46,-70" fill="none" stroke="url(#gSteel)" stroke-width="5" stroke-linecap="round"/><circle cx="-60" cy="-58" r="15" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><circle cx="-60" cy="-58" r="11.5" fill="#12161B"/><g class="spin"><circle cx="-60" cy="-58" r="11" fill="none"/><path d="M-60,-58 L-49.0,-58.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-52.2,-50.2" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-60.0,-47.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-67.8,-50.2" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-71.0,-58.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-67.8,-65.8" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-60.0,-69.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M-60,-58 L-52.2,-65.8" stroke="#DDE2E8" stroke-width="1.2"/></g><circle cx="-60" cy="-58" r="3" fill="#E3E7EC"/></g><g data-a="0.412,0.452,0,90,0,1"><path d="M20,-106 Q20,-80 46,-70" fill="none" stroke="url(#gSteel)" stroke-width="5" stroke-linecap="round"/><path d="M60,-106 Q60,-80 60,-70" fill="none" stroke="url(#gSteel)" stroke-width="5" stroke-linecap="round"/><path d="M100,-106 Q100,-80 74,-70" fill="none" stroke="url(#gSteel)" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="-58" r="15" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><circle cx="60" cy="-58" r="11.5" fill="#12161B"/><g class="spin"><circle cx="60" cy="-58" r="11" fill="none"/><path d="M60,-58 L71.0,-58.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L67.8,-50.2" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L60.0,-47.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L52.2,-50.2" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L49.0,-58.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L52.2,-65.8" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L60.0,-69.0" stroke="#DDE2E8" stroke-width="1.2"/><path d="M60,-58 L67.8,-65.8" stroke="#DDE2E8" stroke-width="1.2"/></g><circle cx="60" cy="-58" r="3" fill="#E3E7EC"/></g></g>
+      <g data-a="0.560,0.595,0,-70,0,1"><g clip-path="url(#cp_wing)"><use href="#ph"/></g><path d="M90,64 L129,57 L133,63 L152,67 L150,74 L140,82 L128,83 L95,97 L91,95 Z M262,58 L298,54 L303,56 L304,83 L298,83 L290,75 L272,64 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.590,0.625,0,-90,0,1"><g clip-path="url(#cp_cabin)"><use href="#ph"/></g><path d="M150,67 L210,60 L262,58 L286,70 L312,102 L320,113 L300,113 L200,115 L128,119 L124,108 L138,84 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.620,0.655,0,-60,0,1"><g clip-path="url(#cp_mirrors)"><use href="#ph"/></g><path d="M95,108 L126,106 L129,118 L124,126 L104,127 L95,121 Z M311,97 L342,94 L344,109 L340,114 L320,114 L313,104 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.650,0.685,-110,0,0,1"><g clip-path="url(#cp_fender)"><use href="#ph"/></g><path d="M88,131 L108,139 L131,148 L128,151 L130,164 L126,176 L113,223 L100,217 L94,205 L90,180 L87,150 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.680,0.715,0,-80,0,1"><g clip-path="url(#cp_hood)"><use href="#ph"/></g><path d="M128,118 L200,114 L300,112 L322,112 L356,126 L357,143 L338,140 L300,147 L282,151 L240,149 L200,153 L160,151 L130,149 L108,140 L92,132 L100,126 L124,125 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.710,0.745,0,80,0,1"><g clip-path="url(#cp_bumper2)"><use href="#ph"/></g><path d="M125,172 L150,170 L189,168 L191,159 L160,150 L200,152 L240,148 L282,150 L289,155 L298,162 L337,159 L342,150 L338,139 L357,142 L362,160 L366,205 L363,215 L300,219 L180,221 L123,219 L115,208 L121,182 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.740,0.775,0,-50,0,1"><g clip-path="url(#cp_lights)"><use href="#ph"/></g><path d="M128,150 L160,150 L191,159 L189,169 L150,171 L129,164 Z M289,155 L299,146 L338,139 L342,150 L337,159 L298,162 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.770,0.805,0,-70,0,1"><g clip-path="url(#cp_kidneys)"><use href="#ph"/></g><path d="M198,156 L237,152 L241,165 L241,200 L236,210 L215,211 L203,200 L196,176 Z M243,153 L276,150 L284,165 L285,186 L277,204 L262,208 L244,208 L242,180 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g><g data-a="0.800,0.835,0,60,0,1"><g clip-path="url(#cp_splitter)"><use href="#ph"/></g><path d="M111,221 L124,216 L180,218 L300,216 L363,212 L363,218 L300,224 L180,226 L124,225 Z" fill="none" stroke="#8FD6FF" stroke-width=".7" opacity=".9"/></g>
+      <g class="step" data-s=".765,.80"><ellipse cx="160" cy="161" rx="26" ry="9" fill="#FFFFFF" filter="url(#fSoft)"/><ellipse cx="318" cy="150" rx="24" ry="9" fill="#FFFFFF" filter="url(#fSoft)"/></g>
+      <g class="paint" clip-path="url(#cp_out)"><use href="#ph"/></g>
+      <g class="real" clip-path="url(#cWipe)"><g class="photo"><use href="#ph"/></g><rect x="-60" y="0" width="520" height="70" fill="url(#gTop)"/></g>
+      <rect class="beam" x="-62" y="0" width="3" height="262" fill="#CFEFFF" filter="url(#fGlow)"/>
+      <g class="hud" fill="#8FD6FF"><path d="M-50,24 V10 H-36 M436,10 H450 V24 M450,238 V252 H436 M-36,252 H-50 V238" fill="none" stroke="#8FD6FF" stroke-width="1.5"/>
+        <text class="step" data-s=".03,.50" x="-28" y="22" data-en="ASSEMBLY · TWIN-TURBO INLINE-6">ENSAMBLE · MOTOR 6 EN LÍNEA BITURBO</text>
+        <text class="step" data-s=".50,.875" x="-28" y="22" data-en="ASSEMBLY · BMW M4 GT3">ENSAMBLE · BMW M4 GT3</text>
+        <text class="step" data-s=".84,.875" x="428" y="22" text-anchor="end" fill="#4FD1A1" data-en="READY">LISTO</text>
+        <g class="step" data-s="0.03,0.455"><path d="M94,119 L104,117" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="104" cy="117" r="1.8" fill="#FFC421"/><text x="92" y="121" text-anchor="end" fill="#FFE08A" data-en="01 BLOCK">01 BLOQUE</text></g><g class="step" data-s="0.08,0.455"><path d="M88,152 L95,160" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="95" cy="160" r="1.8" fill="#FFC421"/><text x="86" y="150" text-anchor="end" fill="#FFE08A" data-en="02 CRANKSHAFT">02 CIGÜEÑAL</text></g><g class="step" data-s="0.12,0.455"><path d="M316,108 L282,108" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="282" cy="108" r="1.8" fill="#FFC421"/><text x="318" y="110" text-anchor="start" fill="#FFE08A" data-en="03 PISTONS ×6">03 PISTONES ×6</text></g><g class="step" data-s="0.19,0.455"><path d="M316,80 L300,78" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="300" cy="78" r="1.8" fill="#FFC421"/><text x="318" y="82" text-anchor="start" fill="#FFE08A" data-en="04 CYL. HEAD">04 CULATA</text></g><g class="step" data-s="0.25,0.455"><path d="M88,72 L104,70" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="104" cy="70" r="1.8" fill="#FFC421"/><text x="86" y="74" text-anchor="end" fill="#FFE08A" data-en="05 HEAD BOLTS">05 TORNILLOS</text></g><g class="step" data-s="0.3,0.455"><path d="M316,56 L298,56" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="298" cy="56" r="1.8" fill="#FFC421"/><text x="318" y="58" text-anchor="start" fill="#FFE08A" data-en="06 VALVE COVER">06 TAPA</text></g><g class="step" data-s="0.35,0.455"><path d="M88,44 L119,43" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="119" cy="43" r="1.8" fill="#FFC421"/><text x="86" y="46" text-anchor="end" fill="#FFE08A" data-en="07 SPARK PLUGS ×6">07 BUJÍAS ×6</text></g><g class="step" data-s="0.56,0.86"><path d="M86,60 L96,70" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="96" cy="70" r="1.8" fill="#FFC421"/><text x="84" y="58" text-anchor="end" fill="#FFE08A" data-en="09 REAR WING">09 ALERÓN</text></g><g class="step" data-s="0.59,0.86"><path d="M318,68 L288,78" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="288" cy="78" r="1.8" fill="#FFC421"/><text x="320" y="66" text-anchor="start" fill="#FFE08A" data-en="10 CABIN">10 CABINA</text></g><g class="step" data-s="0.62,0.86"><path d="M86,108 L98,114" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="98" cy="114" r="1.8" fill="#FFC421"/><text x="84" y="106" text-anchor="end" fill="#FFE08A" data-en="11 MIRRORS">11 ESPEJOS</text></g><g class="step" data-s="0.65,0.86"><path d="M82,184 L92,180" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="92" cy="180" r="1.8" fill="#FFC421"/><text x="80" y="186" text-anchor="end" fill="#FFE08A" data-en="12 FENDER">12 SALPICADERA</text></g><g class="step" data-s="0.68,0.86"><path d="M370,126 L340,128" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="340" cy="128" r="1.8" fill="#FFC421"/><text x="372" y="124" text-anchor="start" fill="#FFE08A" data-en="13 HOOD">13 COFRE</text></g><g class="step" data-s="0.71,0.86"><path d="M372,194 L364,192" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="364" cy="192" r="1.8" fill="#FFC421"/><text x="374" y="196" text-anchor="start" fill="#FFE08A" data-en="14 BUMPER">14 DEFENSA</text></g><g class="step" data-s="0.74,0.86"><path d="M372,150 L342,150" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="342" cy="150" r="1.8" fill="#FFC421"/><text x="374" y="152" text-anchor="start" fill="#FFE08A" data-en="15 HEADLIGHTS">15 FAROS</text></g><g class="step" data-s="0.77,0.86"><path d="M86,152 L198,172" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="198" cy="172" r="1.8" fill="#FFC421"/><text x="84" y="150" text-anchor="end" fill="#FFE08A" data-en="16 GRILLES">16 PARRILLAS</text></g><g class="step" data-s="0.8,0.86"><path d="M86,230 L114,222" stroke="#FFC421" stroke-width=".8" fill="none"/><circle cx="114" cy="222" r="1.8" fill="#FFC421"/><text x="84" y="232" text-anchor="end" fill="#FFE08A" data-en="17 SPLITTER">17 SPLITTER</text></g><g class="step" data-s=".40,.458"><path d="M43,186 L146,134" stroke="#FFC421" stroke-width=".8" stroke-dasharray="4 3" fill="none"/><circle cx="153" cy="127" r="14" fill="none" stroke="#FFC421" stroke-width=".8"/>
+  <g transform="translate(20,205)"><path d="M0,-31 H40 V-17 H22 Z" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><circle r="31" fill="url(#gSteel)" stroke="#8FD6FF" stroke-width=".6" stroke-opacity=".75"/><circle r="26" fill="#0B0E12" stroke="#5E6670" stroke-width="1"/>
+  <g class="spin"><circle r="24" fill="none"/><path d="M5.0,0.0 Q13.2,4.8 13.4,18.7" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M4.2,2.7 Q8.5,11.1 1.1,23.0" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M2.1,4.5 Q1.1,14.0 -11.5,19.9" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M-0.7,4.9 Q-6.6,12.3 -20.4,10.6" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M-3.3,3.8 Q-12.2,6.8 -22.9,-2.1" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M-4.8,1.4 Q-14.0,-0.9 -18.1,-14.2" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M-4.8,-1.4 Q-11.3,-8.3 -7.6,-21.7" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M-3.3,-3.8 Q-5.0,-13.1 5.4,-22.4" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M-0.7,-4.9 Q2.9,-13.7 16.6,-15.9" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M2.1,-4.5 Q9.8,-10.0 22.6,-4.4" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/><path d="M4.2,-2.7 Q13.7,-3.1 21.4,8.5" fill="none" stroke="#E8ECF0" stroke-width="2.4" stroke-linecap="round"/></g><circle r="5.5" fill="url(#gPist)" stroke="#3A4048" stroke-width=".8"/><polygon points="2.8,0.0 1.4,2.4 -1.4,2.4 -2.8,0.0 -1.4,-2.4 1.4,-2.4" fill="#9AA3AD"/></g>
+  <text x="20" y="167" text-anchor="middle" fill="#FFE08A" data-en="08 TURBO ×2">08 TURBO ×2</text></g><text class="step" data-s="0.03,0.08" x="-28" y="247">N010 G17 G21 G90</text><text class="step" data-s="0.08,0.12" x="-28" y="247">N020 G01 X0. F1200</text><text class="step" data-s="0.12,0.19" x="-28" y="247">N030 G01 Z-120. F2400</text><text class="step" data-s="0.19,0.25" x="-28" y="247">N040 G01 Z-80. F1800</text><text class="step" data-s="0.25,0.3" x="-28" y="247">N050 G84 M11X1.5 Z-40.</text><text class="step" data-s="0.3,0.35" x="-28" y="247">N060 G01 Z-65. F1800</text><text class="step" data-s="0.35,0.4" x="-28" y="247">N070 G84 M12X1.25 Z-19.</text><text class="step" data-s="0.4,0.46" x="-28" y="247">N080 G02 I0. J0. F600</text><text class="step" data-s="0.56,0.59" x="-28" y="247">N090 G01 Z-70. F2400</text><text class="step" data-s="0.59,0.62" x="-28" y="247">N100 G01 Z-90. F2400</text><text class="step" data-s="0.62,0.65" x="-28" y="247">N110 G01 Z-60. F2400</text><text class="step" data-s="0.65,0.68" x="-28" y="247">N120 G01 X0. F2400</text><text class="step" data-s="0.68,0.71" x="-28" y="247">N130 G01 Z-80. F2400</text><text class="step" data-s="0.71,0.74" x="-28" y="247">N140 G01 Z80. F1800</text><text class="step" data-s="0.74,0.77" x="-28" y="247">N150 G01 Z-50. F1800</text><text class="step" data-s="0.77,0.8" x="-28" y="247">N160 G01 Z-70. F1800</text><text class="step" data-s="0.8,0.84" x="-28" y="247">N170 G01 Z60. F1800</text><text class="step" data-s=".46,.50" x="-28" y="247">N085 G00 X226. Y140.</text><text class="step" data-s=".50,.56" x="-28" y="247" data-en="N088 STRUCTURE SCAN">N088 ESCANEO DE ESTRUCTURA</text><text class="step" data-s=".84,.875" x="-28" y="247">N180 M30</text><text class="step" data-s="0.03,0.08" x="428" y="247" text-anchor="end" data-en="STEP 01/17">PASO 01/17</text><text class="step" data-s="0.08,0.12" x="428" y="247" text-anchor="end" data-en="STEP 02/17">PASO 02/17</text><text class="step" data-s="0.12,0.19" x="428" y="247" text-anchor="end" data-en="STEP 03/17">PASO 03/17</text><text class="step" data-s="0.19,0.25" x="428" y="247" text-anchor="end" data-en="STEP 04/17">PASO 04/17</text><text class="step" data-s="0.25,0.3" x="428" y="247" text-anchor="end" data-en="STEP 05/17">PASO 05/17</text><text class="step" data-s="0.3,0.35" x="428" y="247" text-anchor="end" data-en="STEP 06/17">PASO 06/17</text><text class="step" data-s="0.35,0.4" x="428" y="247" text-anchor="end" data-en="STEP 07/17">PASO 07/17</text><text class="step" data-s="0.4,0.56" x="428" y="247" text-anchor="end" data-en="STEP 08/17">PASO 08/17</text><text class="step" data-s="0.56,0.59" x="428" y="247" text-anchor="end" data-en="STEP 09/17">PASO 09/17</text><text class="step" data-s="0.59,0.62" x="428" y="247" text-anchor="end" data-en="STEP 10/17">PASO 10/17</text><text class="step" data-s="0.62,0.65" x="428" y="247" text-anchor="end" data-en="STEP 11/17">PASO 11/17</text><text class="step" data-s="0.65,0.68" x="428" y="247" text-anchor="end" data-en="STEP 12/17">PASO 12/17</text><text class="step" data-s="0.68,0.71" x="428" y="247" text-anchor="end" data-en="STEP 13/17">PASO 13/17</text><text class="step" data-s="0.71,0.74" x="428" y="247" text-anchor="end" data-en="STEP 14/17">PASO 14/17</text><text class="step" data-s="0.74,0.77" x="428" y="247" text-anchor="end" data-en="STEP 15/17">PASO 15/17</text><text class="step" data-s="0.77,0.8" x="428" y="247" text-anchor="end" data-en="STEP 16/17">PASO 16/17</text><text class="step" data-s="0.8,0.84" x="428" y="247" text-anchor="end" data-en="STEP 17/17">PASO 17/17</text>
+        <text data-z=".64,.725" x="-28" y="22" fill="#FFE08A" data-en="RENDER · FROM MODEL TO REAL LIFE">RENDER · DEL MODELO A LA VIDA REAL</text>
+      </g>
+    </svg>
+      <video class="vid" muted playsinline preload="auto" aria-label="Video real de un carro derrapando en pista"><source src="assets/derrape-pista.mp4" type="video/mp4"><source src="assets/derrape-pista.webm" type="video/webm"></video>
+      <div class="vtag"><b data-en="This is how your BMW leaves our shop">Así sale tu BMW de nuestro taller</b><span data-en="From blueprint to track">Del plano a la pista</span></div></div>
+      <div class="phases" aria-hidden="true"><div class="ptrack"><i></i></div><div class="plabels"><span data-p="0,.33" data-en="Engine">Motor</span><span data-p=".33,.403" data-en="Structure">Estructura</span><span data-p=".403,.63" data-en="Assembly">Ensamble</span><span data-p=".63,1" data-en="Finished">Terminado</span></div></div></div>
+    <div class="series" aria-label="Modelos"><span>Serie 1</span><span>Serie 2</span><span>Serie 3</span><span>Serie 4</span><span>Serie 5</span><span>Serie 6</span><span>Serie 7</span><span>X1</span><span>X3</span><span>X5</span><span>X6</span><span>Z4</span><span>M</span></div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="What we do">Lo que hacemos</p>
+      <h2 data-en="BMW services">Servicios para tu BMW</h2>
+      <p class="lead" data-en="Pick the job and book. We send your quote in writing, no commitment.">Elige el trabajo y agenda. Te mandamos tu cotización por escrito, sin compromiso.</p>
+    </div>
+    <div class="chips" id="cats" role="group" aria-label="Categorías"></div>
+    <div class="board" id="board"></div>
+    <p class="note" data-en="Don't see your job? Book a diagnostic and we quote it the same day.">¿No ves tu trabajo? Agenda un diagnóstico y te cotizamos el mismo día.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2 data-en="Why us">Por qué con nosotros</h2></div>
+    <div class="why">
+      <div><h3 data-en="BMW only">Solo BMW</h3><p data-en="We work on these engines every day: N20, N52, N54, N55, B48, B58.">Trabajamos estos motores todos los días: N20, N52, N54, N55, B48, B58.</p></div>
+      <div><h3 data-en="Written quote">Cotización por escrito</h3><p data-en="You know the total before we start. No surprises at pickup.">Sabes el total antes de empezar. Sin sorpresas al recoger.</p></div>
+      <div><h3 data-en="Parts in one place">Partes aquí mismo</h3><p data-en="Order the part and book the install in the same visit.">Pides la parte y agendas la instalación en la misma visita.</p></div>
+      <div><h3 data-en="Fast answers">Respuesta rápida</h3><p data-en="WhatsApp and Messenger, in Spanish or English.">WhatsApp y Messenger, en español o inglés.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="agendar">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="Booking">Citas</p>
+      <h2 data-en="Book your appointment">Agenda tu cita</h2>
+    </div>
+    <div class="book">
+      <form id="bookForm" novalidate>
+        <div class="f full"><label for="bSvc" data-en="Service">Servicio</label><select id="bSvc"></select></div>
+        <div class="f"><label for="bChassis" data-en="Chassis">Chasis</label><select id="bChassis"></select></div>
+        <div class="f"><label for="bYear" data-en="Year and model">Año y modelo</label><input id="bYear" placeholder="2014 328i" autocomplete="off"></div>
+        <div class="f"><label for="bDate" data-en="Date">Fecha</label><input id="bDate" type="date"></div>
+        <div class="f"><span class="lbl" data-en="Time">Hora</span><div class="slots" id="slots" role="group" aria-label="Hora"></div></div>
+        <div class="f"><label for="bName" data-en="Name">Nombre</label><input id="bName" autocomplete="name"></div>
+        <div class="f"><label for="bPhone" data-en="Phone">Teléfono</label><input id="bPhone" type="tel" autocomplete="tel" placeholder="(915) 555-0100"></div>
+        <div class="f full"><label for="bNote" data-en="What is the car doing? (optional)">¿Qué le pasa al carro? (opcional)</label><textarea id="bNote"></textarea></div>
+        <div class="f full"><p class="err" id="bErr" hidden></p><button class="btn go" type="submit" data-en="Prepare my request">Preparar mi solicitud</button></div>
+      </form>
+      <div class="panel" id="bookPanel">
+        <h3 data-en="How it works">Cómo funciona</h3>
+        <ol class="steps">
+          <li data-en="Pick the service, day and time.">Elige servicio, día y hora.</li>
+          <li data-en="Send the request by WhatsApp or Messenger with one tap.">Envía la solicitud por WhatsApp o Messenger con un toque.</li>
+          <li data-en="We confirm your slot and send the written quote.">Te confirmamos el horario y mandamos la cotización por escrito.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partes">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="Store">Tienda</p>
+      <h2 data-en="BMW parts">Partes para BMW</h2>
+      <p class="lead" data-en="Filter by chassis, add to the cart and send your list. We reply with price and availability for your VIN.">Filtra por chasis, agrega al carrito y envía tu lista. Te respondemos con precio y disponibilidad para tu VIN.</p>
+    </div>
+    <div class="store">
+      <div>
+        <div class="filters">
+          <div class="f"><label for="pChassis" data-en="Chassis">Chasis</label><select id="pChassis"></select></div>
+          <div class="f"><label for="pSearch" data-en="Search">Buscar</label><input id="pSearch" type="search" placeholder="balatas, bomba de agua…"></div>
+        </div>
+        <div class="grid" id="parts"></div>
+      </div>
+      <aside class="panel cart" id="carrito">
+        <h3 data-en="Your cart">Tu carrito</h3>
+        <div id="cartLines" style="display:flex;flex-direction:column;gap:10px"></div>
+        <small class="empty" data-en="We confirm price, pickup or delivery by message.">Te confirmamos precio y entrega o recolección por mensaje.</small>
+        <div class="acts" id="cartActs"></div>
+        <p class="okline" id="cartMsg" hidden></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="fb" id="facebook">
+  <div class="wrap">
+    <div class="head" style="margin:0">
+      <p class="eyebrow">Facebook</p>
+      <h2 data-en="Follow the work">Sigue los trabajos</h2>
+      <p class="lead" data-en="Every finished job goes on our Facebook page: before and after. Message us there and we answer right away.">Cada trabajo terminado sube a nuestra página de Facebook: antes y después. Escríbenos ahí y te respondemos enseguida.</p>
+    </div>
+    <div class="acts">
+      <a class="btn blue" id="fbPage" target="_blank" rel="noopener" href="https://www.facebook.com/" data-en="See the Facebook page">Ver la página de Facebook</a>
+      <a class="btn" id="fbMsg" target="_blank" rel="noopener" href="https://www.messenger.com/" data-en="Message on Messenger">Escribir por Messenger</a>
+      <a class="btn" id="fbRev" target="_blank" rel="noopener" href="https://www.facebook.com/" data-en="Leave a review">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>Barboza AutoTech · El Paso, TX</span><span data-en="Independent shop. Not affiliated with BMW AG.">Taller independiente. Sin afiliación con BMW AG.</span></div></footer>
+
+<script>
+// ====== Cambia estos datos y el sitio queda enlazado ======
+const CFG = {
+  whatsapp: '',   // número con código de país, solo dígitos. Ej: 19155550100
+  facebook: '61582160279105',   // ID de la página Barboza AutoTech
+  hours: ['9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00'],
+  draft: false
+};
+const CATS = {mant:['Mantenimiento','Maintenance'],motor:['Motor','Engine'],frenos:['Frenos y suspensión','Brakes & suspension'],enfr:['Enfriamiento','Cooling'],elec:['Eléctrico y diagnóstico','Electrical & diagnostics']};
+const SERVICES = [
+ ['mant','Servicio de aceite y filtro','Oil and filter service',0],
+ ['mant','Bujías','Spark plugs',0],
+ ['mant','Cambio de líquido de frenos','Brake fluid flush',0],
+ ['mant','Servicio de transmisión automática','Automatic transmission service',0],
+ ['mant','Inspección antes de comprar','Pre-purchase inspection',0],
+ ['motor','Junta de tapa de válvulas','Valve cover gasket',0],
+ ['motor','Junta de base de filtro de aceite','Oil filter housing gasket',0],
+ ['motor','Junta de cárter','Oil pan gasket',0],
+ ['motor','Solenoides VANOS','VANOS solenoids',0],
+ ['motor','Bobinas de encendido','Ignition coils',0],
+ ['frenos','Balatas y discos delanteros','Front pads and rotors',0],
+ ['frenos','Balatas y discos traseros','Rear pads and rotors',0],
+ ['frenos','Brazos de control delanteros','Front control arms',0],
+ ['frenos','Amortiguadores delanteros','Front struts',0],
+ ['enfr','Bomba de agua y termostato','Water pump and thermostat',0],
+ ['enfr','Depósito de anticongelante','Coolant expansion tank',0],
+ ['enfr','Cambio de anticongelante','Coolant flush',0],
+ ['elec','Diagnóstico con escáner','Scan-tool diagnostic',0],
+ ['elec','Batería con registro','Battery with registration',0],
+ ['elec','Servicio de aire acondicionado','A/C service',0]
+];
+const CHASSIS = ['E46','E90','E60','E70','F10','F30','F25','G20','G30'];
+const PARTS = [
+ ['Kit de filtro de aceite','Oil filter kit',0,['E90','E60','F30','F10']],
+ ['Kit de aceite 5W-30 (7 qt) con filtro','5W-30 oil kit (7 qt) with filter',0,['E90','F30','F10','G20']],
+ ['Balatas delanteras','Front brake pads',0,['E90','F30','G20']],
+ ['Discos delanteros (par)','Front rotors (pair)',0,['E90','F30']],
+ ['Sensor de desgaste de balatas','Brake pad wear sensor',0,['E90','E60','F30','F10','G20']],
+ ['Juego de junta de tapa de válvulas','Valve cover gasket set',0,['E90','E60','E70']],
+ ['Junta de base de filtro de aceite','Oil filter housing gasket',0,['E90','E60','F30','F10']],
+ ['Bomba de agua eléctrica','Electric water pump',0,['E90','E60','F30','F10']],
+ ['Termostato','Thermostat',0,['E90','E60','F30','F10']],
+ ['Depósito de anticongelante','Coolant expansion tank',0,['E46','E90','F30']],
+ ['Bobina de encendido','Ignition coil',0,['E90','F30','F10','G20','G30']],
+ ['Bujías (juego de 6)','Spark plugs (set of 6)',0,['E90','E60','F30','F10']],
+ ['Batería AGM H8','AGM battery H8',0,['E60','E70','F10','F25','G30']],
+ ['Kit de brazos de control delanteros','Front control arm kit',0,['E46','E90','F30']],
+ ['Filtro de cabina','Cabin air filter',0,['F30','F10','F25','G20','G30']]
+];
+
+let lang='es', cat='all', slot='', cart={};
+try{ cart=JSON.parse(localStorage.getItem('pm_cart')||'{}')||{} }catch(e){}
+const $=id=>document.getElementById(id);
+const T=(es,en)=>lang==='es'?es:en;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money=n=>'$'+n.toFixed(2);
+const wa=msg=>'https://wa.me/'+CFG.whatsapp+'?text='+encodeURIComponent(msg);
+
+function renderCats(){
+  const all=[['all',T('Todos','All')]].concat(Object.keys(CATS).map(k=>[k,T(...CATS[k])]));
+  $('cats').innerHTML=all.map(([k,l])=>`<button class="chip" type="button" data-cat="${k}" aria-pressed="${cat===k}">${esc(l)}</button>`).join('');
+}
+function renderBoard(){
+  $('board').innerHTML=SERVICES.map((s,i)=>[s,i]).filter(([s])=>cat==='all'||s[0]===cat).map(([s,i])=>
+   `<div class="svc"><div class="name">${esc(T(s[1],s[2]))}<span class="cat">${esc(T(...CATS[s[0]]))}</span></div>
+    <a class="btn sm" href="#agendar" data-book="${i}">${T('Agendar','Book')}</a></div>`).join('');
+}
+function renderSelects(){
+  const sv=$('bSvc').value, bc=$('bChassis').value, pc=$('pChassis').value;
+  $('bSvc').innerHTML=`<option value="">${T('Elige un servicio','Choose a service')}</option>`+SERVICES.map((s,i)=>`<option value="${i}">${esc(T(s[1],s[2]))}</option>`).join('');
+  const ch=CHASSIS.map(c=>`<option>${c}</option>`).join('');
+  $('bChassis').innerHTML=`<option value="">${T('No sé / otro','Not sure / other')}</option>`+ch;
+  $('pChassis').innerHTML=`<option value="">${T('Todos','All')}</option>`+ch;
+  $('bSvc').value=sv; $('bChassis').value=bc; $('pChassis').value=pc;
+}
+function renderSlots(){
+  $('slots').innerHTML=CFG.hours.map(h=>`<button class="slot" type="button" data-slot="${h}" aria-pressed="${slot===h}">${h}</button>`).join('');
+}
+function renderParts(){
+  const c=$('pChassis').value, q=$('pSearch').value.trim().toLowerCase();
+  const list=PARTS.map((p,i)=>[p,i]).filter(([p])=>(!c||p[3].includes(c))&&(!q||(p[0]+' '+p[1]).toLowerCase().includes(q)));
+  $('parts').innerHTML=list.length?list.map(([p,i])=>
+   `<div class="part"><div class="pn">${esc(T(p[0],p[1]))}</div><div class="fit">${p[3].map(f=>`<span>${f}</span>`).join('')}</div>
+    <div class="foot"><button class="btn sm blue" type="button" data-add="${i}">${T('Agregar','Add')}</button></div></div>`).join('')
+   :`<p class="empty">${T('No hay partes con ese filtro. Escríbenos y la conseguimos.','No parts match. Message us and we will source it.')}</p>`;
+}
+function cartItems(){ return Object.keys(cart).filter(i=>PARTS[i]&&cart[i]>0).map(i=>[PARTS[i],+i,cart[i]]) }
+function orderMsg(){
+  const it=cartItems(), tot=it.reduce((a,[p,,n])=>a+p[2]*n,0);
+  return T('Hola, quiero cotizar estas partes para mi BMW:','Hi, I would like a quote on these parts for my BMW:')+'\n'+it.map(([p,,n])=>`• ${n} × ${T(p[0],p[1])}`).join('\n');
+}
+function renderCart(){
+  try{ localStorage.setItem('pm_cart',JSON.stringify(cart)) }catch(e){}
+  const it=cartItems(), count=it.reduce((a,[, ,n])=>a+n,0), tot=it.reduce((a,[p,,n])=>a+p[2]*n,0);
+  $('cartCount').textContent=count;
+  $('cartLines').innerHTML=it.length?it.map(([p,i,n])=>
+   `<div class="line"><span>${esc(T(p[0],p[1]))}</span><span></span>
+    <span class="qty"><button type="button" data-dec="${i}" aria-label="${T('Quitar uno','Remove one')}">−</button><span class="num">${n}</span><button type="button" data-inc="${i}" aria-label="${T('Agregar uno','Add one')}">+</button></span></div>`).join('')
+   :`<p class="empty">${T('Tu carrito está vacío. Agrega una parte para empezar.','Your cart is empty. Add a part to start.')}</p>`;
+  $('cartActs').innerHTML=it.length?`<a class="btn go" target="_blank" rel="noopener" href="${wa(orderMsg())}">${T('Pedir cotización por WhatsApp','Request quote on WhatsApp')}</a><button class="btn sm" type="button" id="copyOrder">${T('Copiar lista','Copy list')}</button>`:'';
+  $('cartMsg').hidden=true;
+}
+function copy(text,el,pre){
+  const done=()=>{el.textContent=T('Copiado. Pégalo en tu mensaje.','Copied. Paste it in your message.');el.hidden=false};
+  const fb=()=>{ if(pre){const r=document.createRange();r.selectNodeContents(pre);const s=getSelection();s.removeAllRanges();s.addRange(r)} el.textContent=T('Selecciona el texto y cópialo.','Select the text and copy it.');el.hidden=false };
+  try{ navigator.clipboard.writeText(text).then(done,fb) }catch(e){ fb() }
+}
+function applyLang(){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-en]').forEach(el=>{ if(!el.dataset.es) el.dataset.es=el.textContent; el.textContent=lang==='es'?el.dataset.es:el.dataset.en });
+  $('langBtn').textContent=lang==='es'?'EN':'ES';
+  $('pSearch').placeholder=T('balatas, bomba de agua…','pads, water pump…');
+  renderCats();renderBoard();renderSelects();renderSlots();renderParts();renderCart();
+}
+
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-cat],[data-book],[data-slot],[data-add],[data-inc],[data-dec],#copyOrder,#copyBook');
+  if(!t) return;
+  if(t.dataset.cat){cat=t.dataset.cat;renderCats();renderBoard()}
+  else if(t.dataset.book){$('bSvc').value=t.dataset.book}
+  else if(t.dataset.slot){slot=t.dataset.slot;renderSlots()}
+  else if(t.dataset.add||t.dataset.inc){const i=t.dataset.add||t.dataset.inc;cart[i]=(cart[i]||0)+1;renderCart()}
+  else if(t.dataset.dec){const i=t.dataset.dec;cart[i]=(cart[i]||0)-1;if(cart[i]<=0)delete cart[i];renderCart()}
+  else if(t.id==='copyOrder'){copy(orderMsg(),$('cartMsg'))}
+  else if(t.id==='copyBook'){copy($('bookText').textContent,$('bookCopied'),$('bookText'))}
+});
+$('pChassis').addEventListener('change',renderParts);
+$('pSearch').addEventListener('input',renderParts);
+$('langBtn').addEventListener('click',()=>{lang=lang==='es'?'en':'es';try{localStorage.setItem('pm_lang',lang)}catch(e){}applyLang()});
+
+$('bookForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const s=SERVICES[$('bSvc').value], d=$('bDate').value, n=$('bName').value.trim(), ph=$('bPhone').value.trim(), err=$('bErr');
+  const miss=[];
+  if(!s) miss.push(T('servicio','service')); if(!d) miss.push(T('fecha','date')); if(!slot) miss.push(T('hora','time'));
+  if(!n) miss.push(T('nombre','name')); if(ph.replace(/\D/g,'').length<10) miss.push(T('teléfono de 10 dígitos','10-digit phone'));
+  if(miss.length){err.textContent=T('Falta: ','Missing: ')+miss.join(', ')+'.';err.hidden=false;return}
+  err.hidden=true;
+  const car=[$('bChassis').value,$('bYear').value.trim()].filter(Boolean).join(' · ')||T('por confirmar','to confirm');
+  const note=$('bNote').value.trim();
+  const msg=[T('Hola, quiero agendar una cita:','Hi, I would like to book an appointment:'),
+    `${T('Servicio','Service')}: ${T(s[1],s[2])}`,
+    `${T('Carro','Car')}: ${car}`, `${T('Fecha','Date')}: ${d} · ${slot}`, `${T('Nombre','Name')}: ${n}`, `${T('Teléfono','Phone')}: ${ph}`]
+    .concat(note?[`${T('Notas','Notes')}: ${note}`]:[]).join('\n');
+  $('bookPanel').innerHTML=`<h3>${T('Tu solicitud está lista','Your request is ready')}</h3>
+    <p>${T('Envíala para apartar el horario. La cita queda confirmada cuando te respondemos.','Send it to hold the slot. The appointment is confirmed once we reply.')}</p>
+    <pre id="bookText">${esc(msg)}</pre>
+    <div class="acts"><a class="btn go" target="_blank" rel="noopener" href="${wa(msg)}">${T('Enviar por WhatsApp','Send on WhatsApp')}</a>
+    ${CFG.facebook?`<a class="btn" target="_blank" rel="noopener" href="https://m.me/${CFG.facebook}">Messenger</a>`:''}
+    <button class="btn sm" type="button" id="copyBook">${T('Copiar','Copy')}</button></div><p class="okline" id="bookCopied" hidden></p>`;
+});
+
+// animación de la portada: motor, estructura, ensamble del M4 GT3 y carro real (26 s)
+(function(){
+  if(!Element.prototype.animate||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const T=26000, K=.72, o={duration:T,iterations:Infinity}, root=document.querySelector('.m8'), q=sel=>root.querySelectorAll(sel);
+  const Z='translate(0px,0px) rotate(0deg) scale(1)';
+  const fade=(sel,k)=>q(sel).forEach(el=>el.animate(k.map(([offset,opacity])=>({offset,opacity})),o));
+  const win=(el,t0,t1)=>el.animate([{offset:0,opacity:0},{offset:t0,opacity:0},{offset:t0+.006,opacity:1},{offset:t1-.006,opacity:1},{offset:t1,opacity:0},{offset:1,opacity:0}],o);
+  q('[data-a]').forEach(el=>{
+    const [t0,t1,dx,dy,r,sc]=el.dataset.a.split(',').map(Number), F=`translate(${dx}px,${dy}px) rotate(${r}deg) scale(${sc})`;
+    el.animate([{offset:0,opacity:0,transform:F},{offset:t0*K,opacity:0,transform:F,easing:'cubic-bezier(.3,0,.15,1)'},{offset:t1*K,opacity:1,transform:Z},{offset:.96,opacity:1,transform:Z},{offset:.963,opacity:0,transform:Z},{offset:1,opacity:0,transform:Z}],o);
+  });
+  q('[data-s]').forEach(el=>{const [a,b]=el.dataset.s.split(',').map(Number); win(el,a*K,b*K)});
+  q('[data-z]').forEach(el=>{const [a,b]=el.dataset.z.split(',').map(Number); win(el,a,b)});
+  const BIG='translate(200px,172px) scale(.78)', SMALL='translate(226px,140px) scale(.2)';
+  q('.eng').forEach(el=>el.animate([{offset:0,transform:BIG},{offset:.46*K,transform:BIG,easing:'cubic-bezier(.5,0,.2,1)'},{offset:.52*K,transform:SMALL},{offset:1,transform:SMALL}],o));
+  // estructura: el holograma del carro se dibuja de arriba hacia abajo
+  q('.scanclip').forEach(el=>el.animate([{offset:0,transform:'scaleY(0)'},{offset:.49*K,transform:'scaleY(0)'},{offset:.56*K,transform:'scaleY(1)'},{offset:1,transform:'scaleY(1)'}],o));
+  q('.scanline').forEach(el=>el.animate([{offset:0,transform:'translateY(0px)',opacity:0},{offset:.488*K,transform:'translateY(0px)',opacity:0},{offset:.49*K,transform:'translateY(0px)',opacity:1},{offset:.56*K,transform:'translateY(264px)',opacity:1},{offset:.565*K,transform:'translateY(264px)',opacity:0},{offset:1,transform:'translateY(0px)',opacity:0}],o));
+  fade('.wirewrap',[[0,0],[.488*K,0],[.49*K,1],[.80*K,1],[.86*K,.35],[.64,.35],[.66,0],[1,0]]);
+  fade('.paint',[[0,0],[.835*K,0],[.86*K,1],[.96,1],[.963,0],[1,0]]);
+  // render: barrido de luz que revela la foto real completa
+  q('.wipe').forEach(el=>el.animate([{offset:0,transform:'scaleX(0)'},{offset:.64,transform:'scaleX(0)'},{offset:.72,transform:'scaleX(1)'},{offset:1,transform:'scaleX(1)'}],o));
+  fade('.real',[[0,0],[.638,0],[.64,1],[.972,1],[.99,0],[1,0]]);
+  q('.beam').forEach(el=>el.animate([{offset:0,transform:'translateX(0px)',opacity:0},{offset:.638,transform:'translateX(0px)',opacity:0},{offset:.64,transform:'translateX(0px)',opacity:1},{offset:.72,transform:'translateX(520px)',opacity:1},{offset:.724,transform:'translateX(520px)',opacity:0},{offset:1,transform:'translateX(0px)',opacity:0}],o));
+  q('.photo').forEach(el=>el.animate([{offset:0,transform:'scale(1)'},{offset:.72,transform:'scale(1)',easing:'ease-in-out'},{offset:.76,transform:'scale(1.05)'},{offset:1,transform:'scale(1.05)'}],o));
+  // corte al video real del derrape, sincronizado con la línea de tiempo
+  const VA=.75, VB=.985, stage=document.querySelector('.viewport'), vid=stage&&stage.querySelector('.vid'), vtag=stage&&stage.querySelector('.vtag');
+  if(vtag) vtag.animate([{offset:0,opacity:0},{offset:.735,opacity:0},{offset:.75,opacity:1},{offset:.975,opacity:1},{offset:.99,opacity:0},{offset:1,opacity:0}],o);
+  if(vid){ const va=vid.animate([{offset:0,opacity:0},{offset:VA-.004,opacity:0},{offset:VA+.008,opacity:1},{offset:.975,opacity:1},{offset:.99,opacity:0},{offset:1,opacity:0}],o);
+    (function tick(){ const p=((va.currentTime||0)%T)/T;
+      if(p>=VA&&p<VB){ if(vid.paused){ try{vid.currentTime=Math.max(0,(p-VA)*T/1000)}catch(e){} const pr=vid.play(); if(pr&&pr.catch) pr.catch(()=>{}); } }
+      else if(!vid.paused){ vid.pause() }
+      requestAnimationFrame(tick); })(); }
+  q('.spin').forEach(el=>el.animate([{transform:'rotate(0deg)'},{transform:'rotate(360deg)'}],{duration:650,iterations:Infinity}));
+  const P=document.querySelector('.phases');
+  if(P){ P.querySelector('.ptrack i').animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],o);
+    P.querySelectorAll('[data-p]').forEach(el=>{const [a,b]=el.dataset.p.split(',').map(Number), on={color:'#F3F8FC',textShadow:'0 0 8px #3D8BFF'}, off={color:'#7890A7',textShadow:'none'};
+      el.animate([{offset:0,...off},{offset:a,...off},{offset:Math.min(a+.004,1),...on},{offset:Math.max(b-.004,0),...on},{offset:b,...off},{offset:1,...off}],o)}); }
+})();
+
+// arranque
+(function(){
+  try{ const l=localStorage.getItem('pm_lang'); if(l==='en'||l==='es') lang=l }catch(e){}
+  const d=new Date(), iso=new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10);
+  $('bDate').min=iso;
+  $('draft').hidden=!CFG.draft;
+  if(CFG.facebook){ $('fbPage').href='https://www.facebook.com/profile.php?id='+CFG.facebook; $('fbMsg').href='https://m.me/'+CFG.facebook; $('fbRev').href='https://www.facebook.com/profile.php?id='+CFG.facebook+'&sk=reviews' }
+  applyLang();
+})();
+</script>
+</body>
+</html>
