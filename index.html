@@ -464,7 +464,7 @@ function renderParts(){
 function cartItems(){ return Object.keys(cart).filter(i=>PARTS[i]&&cart[i]>0).map(i=>[PARTS[i],+i,cart[i]]) }
 function orderMsg(){
   const it=cartItems(), tot=it.reduce((a,[p,,n])=>a+p[2]*n,0);
-  return T('Hola, quiero cotizar estas partes para mi BMW:','Hi, I would like a quote on these parts for my BMW:')+'\n'+it.map(([p,,n])=>`• ${n} × ${T(p[0],p[1])}`).join('\n');
+  return '🔧 BARBOZA AUTOTECH · '+T('PEDIDO DE PARTES','PARTS ORDER')+'\n'+T('Hola, quiero cotizar estas partes para mi BMW:','Hi, I would like a quote on these parts for my BMW:')+'\n'+it.map(([p,,n])=>`• ${n} × ${T(p[0],p[1])}`).join('\n');
 }
 function renderCart(){
   try{ localStorage.setItem('pm_cart',JSON.stringify(cart)) }catch(e){}
@@ -516,7 +516,7 @@ $('bookForm').addEventListener('submit',e=>{
   err.hidden=true;
   const car=[$('bChassis').value,$('bYear').value.trim()].filter(Boolean).join(' · ')||T('por confirmar','to confirm');
   const note=$('bNote').value.trim();
-  const msg=[T('Hola, quiero agendar una cita:','Hi, I would like to book an appointment:'),
+  const msg=['🔧 BARBOZA AUTOTECH · '+T('CITA DEL TALLER','SHOP APPOINTMENT'),T('Hola, quiero agendar una cita:','Hi, I would like to book an appointment:'),
     `${T('Servicio','Service')}: ${T(s[1],s[2])}`,
     `${T('Carro','Car')}: ${car}`, `${T('Fecha','Date')}: ${d} · ${slot}`, `${T('Nombre','Name')}: ${n}`, `${T('Teléfono','Phone')}: ${ph}`]
     .concat(note?[`${T('Notas','Notes')}: ${note}`]:[]).join('\n');
